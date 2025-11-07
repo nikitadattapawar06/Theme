@@ -7,6 +7,20 @@ app_license = "mit"
 
 # Apps
 # ------------------
+# # Custom Hook For theme switching 
+# app_include_css = "/assets/resume_parser/css/custom_theme.css"
+# app_include_css = [
+#     "/assets/resume_parser/css/custom_theme.css",
+#     "/assets/resume_parser/css/custom_theme2.css"
+# ]
+
+###Current 
+app_include_js = "theme.bundle.js"
+app_include_css = "intellore.bundle.css"
+
+# app_include_js = "/assets/resume_parser/js/theme_switcher.js"
+# Custom Hook For Custom Theme
+# app_include_css = "intellore.bundle.css"
 
 # required_apps = []
 
@@ -26,7 +40,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/resume_parser/css/resume_parser.css"
-# app_include_js = "/assets/resume_parser/js/resume_parser.js"
+# app_include_js = "/assets/resume_parser/js/theme_switcher.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/resume_parser/css/resume_parser.css"
@@ -174,9 +188,9 @@ app_license = "mit"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "resume_parser.event.get_events"
-# }
+override_whitelisted_methods = {
+	"frappe.core.doctype.user.user.switch_theme": "resume_parser.overrides.user.user.switch_theme"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
