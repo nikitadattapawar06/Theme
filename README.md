@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#HEAD
 # ERPNext Theme
 
 
@@ -91,7 +91,6 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
-=======
 ### Resume Parser
 
 Resume parser used to create job applicant
@@ -126,3 +125,9 @@ Pre-commit is configured to use the following tools for checking and formatting 
 
 mit
 >>>>>>> 641def3 (feat: Initialize App)
+#Resume Parser
+Frappe app to parse resumes
+
+## Getting Started
+Instructions to install and use the app.
+>>>>>>> 7f0ac0f62b7e96578197b016f3e0c63eb7fdbba5
