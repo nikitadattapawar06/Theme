@@ -1,10 +1,7 @@
 import frappe
 from frappe.model.document import Document
 from frappe import whitelist
-import io
 import re
-import docx
-from datetime import datetime, date
 
 class ResumeUpload(Document):
 
