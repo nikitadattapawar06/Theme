@@ -3,7 +3,6 @@ from frappe.model.document import Document
 from frappe import whitelist
 import io
 import re
-import pdfplumber
 import docx
 from datetime import datetime, date
 
